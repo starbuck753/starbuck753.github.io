@@ -28,20 +28,8 @@ h1{
 	text-align: center;
 }
 
-.subtitle{
-	font: 20pt 'Dosis', georgia, sans-serif;
-	padding: 6px 0 2px 0;
-	margin-top: 4px;
-	text-transform: uppercase;
-	font-weight: bolder;
-	background: #5d0979;
-	background: linear-gradient(90deg, #1e8ccc 0%, #5d0979 40%, #d90071 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 h2{
-	font: 19pt 'Dosis', georgia, sans-serif;
+	font: 22pt 'Dosis', georgia, sans-serif;
 	padding: 6px 0 2px 0;
 	margin-top: 4px;
 	text-transform: uppercase;
@@ -49,15 +37,26 @@ h2{
 }
 
 h3{ 
-	font: 15pt 'Dosis', georgia, sans-serif;
+	font: 16pt 'Dosis', georgia, sans-serif;
 	color: #444;
 	font-weight: 300;
 }
 
 h4{ 
-	font: 12pt verdana, arial, sans-serif;
+	font: 13pt verdana, arial, sans-serif;
 	font-weight:bold;
 	color: #f9ab05;
+}
+
+.colorful{
+	background: #5d0979;
+	background: linear-gradient(90deg, #2aa4eb 0%, #ad30d6 40%, #e2117d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bigfont {
+	font-size: 13pt;
 }
 
 blockquote {
@@ -106,11 +105,11 @@ a:hover {
 }
 
 header {
-    /* The image used */
+  /* The image used */
 	background-image: url("images/header_sm.png");
 	background-color:#fff;
 
-    /* Set a specific height */
+  /* Set a specific height */
 	height: 300px; 
 
   /* Create the parallax scrolling effect */
@@ -163,15 +162,12 @@ section {
 	margin-left: auto;
 	display: grid;
 	align-items: center;
-	/*grid-template-columns: 450px 450px;*/
 	row-gap: 12px;
 	column-gap: 10px;
 	padding: 10px 13%;
-	/*margin-left: 5%;
-	margin-right: 5%;*/
-	/*margin-top: -15px;*/
 	padding-top: 180px;
 }
+
 
 .left {
 	grid-template-columns: 60% 40%;
@@ -214,12 +210,6 @@ section img {
 	grid-area: "header";
 }
 
-.section.onecolumn b {
-	font-weight: bold;
-	color: #222;
-}
-
-
 .textright {
 	text-align: right;
 }
@@ -233,12 +223,16 @@ ul{
 	list-style: square;
 }
 
-.lightbg {
-	background-color: var(--main-bg-color)f1;
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	/*margin-right: -15px;
+	margin-left: -15px;*/
 }
 
-.darkbg {
-	background-color: #f7f7ea;
+.col-lg-3 {
+	flex: 0 0 25%;
+	max-width: 25%;
 }
 
 
