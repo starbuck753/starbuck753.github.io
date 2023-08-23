@@ -158,8 +158,8 @@ main{
 /* ----- SECTIONS -------------------*/
 
 section {
-	max-width: 650px;
-	margin-right: 100px;
+	max-width: 750px;
+	margin-right: 150px;
 	margin-left: auto;
 	display: grid;
 	align-items: center;
@@ -171,7 +171,6 @@ section {
 	margin-right: 5%;*/
 	/*margin-top: -15px;*/
 	padding-top: 180px;
-
 }
 
 .left {
